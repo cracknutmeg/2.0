@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress AndroidLintHardcodedText, AndroidLintOverdraw -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:background="@drawable/popup_border"
+              android:divider="@drawable/divider_popup_header" android:showDividers="middle"
+              android:padding="@dimen/popup_window_border_width">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/en_detailViewHoursTitle"
+            android:id="@+id/tvHoursTitle" android:textSize="@dimen/fontsize_popup_header" android:gravity="center|left"
+            android:textColor="@color/lightGray"
+            android:layout_marginLeft="@dimen/popup_window_header_margin"
+            android:layout_marginTop="@dimen/popup_window_header_margin"
+            android:textStyle="bold"/>
+    <ListView
+            android:layout_width="@dimen/popup_window_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvHoursValue" android:layout_marginBottom="@dimen/popup_window_line_margin"
+            android:divider="@color/lightGray" android:dividerHeight="@dimen/popup_filters_divider"
+            />
+</LinearLayout>

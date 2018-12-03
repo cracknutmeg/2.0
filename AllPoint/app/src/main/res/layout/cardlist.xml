@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/bottom_bar"
+        android:name="com.allpoint.activities.phone.fragments.TabBarFragment_"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_panel_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_panel_height"
+            android:background="@drawable/gradient_panel">
+
+            <TextView
+                style="@style/top_bar_btn_cancel_style"
+                android:onClick="cancelcardList" />
+
+            <TextView
+                style="@style/top_bar_title_style"
+                android:text="Cards" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleLayout"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/en_cardScreenTitle"
+            android:textColor="@color/apGreen"
+            android:textSize="@dimen/commonTextSize" />
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titletext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/addcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardlist"
+            android:layout_margin="10dp"
+            android:background="@drawable/registration_frame_shape"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/en_addCard"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#666666"
+            android:textSize="@dimen/commonTextSize"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:padding="5dp"
+        >
+
+    <com.daimajia.swipe.SwipeLayout
+            xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            swipe:leftEdgeSwipeOffset="0dp"
+            swipe:rightEdgeSwipeOffset="0dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF5534"
+                android:gravity="center_horizontal"
+                android:tag="Bottom3">
+
+            <Button
+                    android:id="@+id/delete"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="#FF0000"
+                    android:text="Delete"
+                    android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/row_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/registration_frame_shape"
+                android:gravity="center_horizontal"
+                android:padding="10dp">
+
+            <TextView
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+					android:singleLine="true"
+                    android:textSize="@dimen/commonTextSizeForSaving"
+                    android:textColor="#666666"/>
+
+            <TextView
+                    android:id="@+id/text_data"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:tag="Hover"
+                    android:singleLine="true"
+					android:textSize="@dimen/commonTextSizeForSaving"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#666666"/>
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+
+</LinearLayout>

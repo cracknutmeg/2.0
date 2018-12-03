@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:background="@android:color/white"
+              android:orientation="horizontal">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/registration_frame_shape">
+
+        <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:paddingLeft="10dp"
+                android:textColor="@color/grey_text_color"
+                android:textSize="@dimen/commonTextSizeForSaving"/>
+
+        <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toLeftOf="@+id/txtAmt"
+                android:layout_toRightOf="@+id/txtDate"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/txtTxnType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_text_color"
+                    android:textSize="@dimen/commonTextSizeForSaving"/>
+
+            <TextView
+                    android:id="@+id/txtCardAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/grey_text_color"
+                    android:textSize="@dimen/commonSmallSize"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txtAmt"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="0.3"
+                android:textColor="@color/grey_text_color"
+                android:textSize="@dimen/commonTextSizeForSaving"/>
+    </LinearLayout>
+
+</LinearLayout>

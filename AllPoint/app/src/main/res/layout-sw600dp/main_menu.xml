@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainMenuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/topLoginLay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_panel_height"
+
+            android:layout_gravity="top"
+            android:background="@drawable/gradient_panel"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/tvTitle"
+                android:text="@string/app_name"
+                style="@style/top_bar_title_style"/>
+
+        <Button
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="@string/app_login"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iViewTopLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mmp_imagebuttons_layout_padding"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:id="@+id/iBtnMenuSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/mm_imagebutton_margin"
+                    android:layout_marginRight="@dimen/mm_imagebutton_margin"
+                    android:background="@drawable/select_main_search"
+                    android:scaleType="centerInside"/>
+
+            <TextView
+                    android:id="@+id/tvMenuSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/mm_text_margin_top"
+                    android:gravity="center"
+                    android:text="@string/en_mainMenuSearchTitle"
+                    android:textColor="@color/apGreen"
+                    android:textSize="@dimen/fontsize_main_menu"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linearLayout2"
+                android:layout_marginLeft="@dimen/mm_imagebuttons_margin"
+                android:layout_toRightOf="@+id/linearLayout2"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:id="@+id/iBtnMenuTrans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/mm_imagebutton_margin"
+                    android:layout_marginRight="@dimen/mm_imagebutton_margin"
+                    android:background="@drawable/select_main_trans"
+                    android:scaleType="centerInside"/>
+
+            <TextView
+                    android:id="@+id/tvMenuTrans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/mm_text_margin_top"
+                    android:gravity="center"
+                    android:text="@string/en_mainMenuTransTitle"
+                    android:textColor="@color/apGreen"
+                    android:textSize="@dimen/fontsize_main_menu"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="@dimen/mm_imagebuttons_margin"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:id="@+id/iBtnMenuScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/mm_imagebutton_margin"
+                    android:layout_marginRight="@dimen/mm_imagebutton_margin"
+                    android:background="@drawable/select_main_scan"
+                    android:scaleType="centerInside"/>
+
+            <TextView
+                    android:id="@+id/tvMenuScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/mm_text_margin_top"
+                    android:gravity="center"
+                    android:text="@string/en_mainMenuScanTitle"
+                    android:textColor="@color/apGreen"
+                    android:textSize="@dimen/fontsize_main_menu"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mm_imagebuttons_margin"
+                android:layout_toRightOf="@+id/linearLayout1"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageButton
+                        android:id="@+id/iBtnMenuMessages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/select_main_messages"
+                        android:scaleType="centerInside"/>
+
+                <RelativeLayout
+                        android:id="@+id/layoutMenuMessageCount"
+                        android:layout_width="@dimen/mm_message_counter_width"
+                        android:layout_height="@dimen/mm_message_counter_height"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/iBtnMenuMessages"
+                        android:layout_alignTop="@+id/iBtnMenuMessages"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:visibility="gone">
+
+                    <ImageView
+                            android:id="@+id/iViewMenuMessageCounter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="false"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/main_menu_message_counter"/>
+
+                    <TextView
+                            android:id="@+id/tvMenuNumberOfMessages"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fontsize_main_menu"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/tvMenuMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/mm_text_margin_top"
+                    android:gravity="center"
+                    android:text="@string/en_mainMenuMessagesTitle"
+                    android:textColor="@color/apGreen"
+                    android:textSize="@dimen/fontsize_main_menu"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/iViewTopLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mm_emptyLayout"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/top_logo"/>
+
+    <RelativeLayout
+            android:id="@+id/mm_emptyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/mmp_logo_padding">
+    </RelativeLayout>
+
+    <fragment
+            android:id="@+id/bottom_bar"
+            android:name="com.allpoint.activities.tablet.fragments.TabBarFragment_"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_panel_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

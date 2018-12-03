@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <size android:height="@dimen/bottom_bar_divider_width"/>
+
+    <solid android:color="@color/lightGray"/>
+
+</shape>

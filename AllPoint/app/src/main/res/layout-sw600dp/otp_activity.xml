@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient_panel" >
+
+        <TextView
+            android:id="@+id/cancel"
+            style="@style/top_bar_btn_cancel_style" />
+
+        <TextView
+            style="@style/top_bar_title_style"
+            android:text="@string/otp_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/top_bar_btn_login_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/otp_info_text"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/edtOTP"
+            style="@style/edit_text_style"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/lightGray"
+            android:hint="@string/otp_hint" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/ResendEmailSMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/otp_reg_received"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ResendOTP"
+                style="@style/top_bar_btn_login_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp"
+                android:text="@string/otp_resend"
+                android:textColor="@android:color/holo_blue_light" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/iBtnSubmit"
+            style="@style/button_style"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/verify" />
+    </LinearLayout>
+
+</RelativeLayout>

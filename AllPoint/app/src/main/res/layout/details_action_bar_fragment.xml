@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailsBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/gradient_panel"
+    android:divider="@drawable/divider_point_details"
+    android:dividerPadding="8dp"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+    <ImageButton
+        android:id="@+id/directionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/details_direction" />
+
+    <ImageButton
+        android:id="@+id/hoursButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/details_hours" />
+
+    <ImageButton
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/details_call" />
+
+    <ImageButton
+        android:id="@+id/storeMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/details_floor_map_disable" />
+
+</LinearLayout>

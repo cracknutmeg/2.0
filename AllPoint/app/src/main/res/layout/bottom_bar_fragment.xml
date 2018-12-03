@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/apGreen"
+        android:divider="@drawable/divider_bottom_bar"
+        android:dividerPadding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/iBtnBottomHome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/select_bottom_home" />
+
+            <TextView
+                android:id="@+id/iTxtBottomHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:text="@string/en_mainMenuHome"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/bottomMenuText"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/iBtnBottomSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/bottom_search" />
+
+            <TextView
+                android:id="@+id/iTxtBottomSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:text="@string/en_mainMenuSearchTitle"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/bottomMenuText"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/iBtnBottomTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="false"
+                android:onClick="iBtnBottomTransaction"
+                android:scaleType="centerInside"
+                android:src="@drawable/bottom_about" />
+
+            <TextView
+                android:id="@+id/iTxtBottomTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:text="@string/en_mainMenuTransTitle"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/bottomMenuText"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null">
+
+                <LinearLayout
+                    android:id="@+id/iBtnBottomMessageslay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/iBtnBottomMessages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:paddingLeft="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bottom_messages" />
+
+                    <TextView
+                        android:id="@+id/iTxtBottomMessages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/en_mainMenuMessagesTitle"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/bottomMenuText"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutBarMessageCount"
+                    android:layout_width="@dimen/bottom_bar_message_counter_width"
+                    android:layout_height="@dimen/bottom_bar_message_counter_height"
+                    android:layout_alignRight="@id/iBtnBottomMessageslay"
+                    android:layout_alignParentTop="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iViewBarMessageCounter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bottom_message_counter" />
+
+                    <TextView
+                        android:id="@+id/tvBarNumberOfMessages"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignWithParentIfMissing="false"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fontsize_bottom_bar_message_counter" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/iBtnBottomMore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/bottom_settings" />
+
+            <TextView
+                android:id="@+id/iTxtBottomMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:text="@string/en_mainMenuMore"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/bottomMenuText"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

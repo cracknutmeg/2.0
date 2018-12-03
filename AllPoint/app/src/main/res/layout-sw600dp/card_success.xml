@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_panel_height"
+            android:background="@drawable/gradient_panel">
+
+        <TextView
+                android:id="@+id/cardTitleMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/card_success"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/commonTextSize"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/done_button"
+                style="@style/top_bar_btn_login_style"
+                android:text="@string/en_filtersBtnDone"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/txtCardValidMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/apGreen"
+            android:textSize="@dimen/commonTextSize"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/validCardIcon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/success"
+                    android:textColor="@color/apGreen"/>
+
+            <TextView
+                    android:id="@+id/cardSuccessFail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="200dp"
+                    android:textColor="@color/apGreen"
+                    android:textSize="@dimen/commonTextSize"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/txtCardNoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card Number:"
+                    android:textColor="@color/apGreen"
+                    android:textSize="@dimen/commonTextSize"/>
+
+            <TextView
+                    android:id="@+id/txt_CardNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/txtCardNoText"
+                    android:textColor="@color/apGreen"
+                    android:textSize="@dimen/commonTextSize"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- <Button
+            android:id="@+id/atmpassSignUpButton"
+            style="@style/button_style"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/login_atmpass"/> -->
+
+</LinearLayout>

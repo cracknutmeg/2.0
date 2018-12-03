@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Bottom Bar Framgemt -->
+    <dimen name="bottomMenuText">12sp</dimen>
+
+    <!-- Login Menu -->
+    <dimen name="forgetPassTextSize">14sp</dimen>
+    <dimen name="SkipTextSize">18sp</dimen>
+
+    <dimen name="topTitleSize">25sp</dimen>
+
+    <dimen name="commonTextSize">25sp</dimen>
+    <dimen name="commonSmallSize">18sp</dimen>
+    <dimen name="commonTextSizeForSaving">25sp</dimen>
+
+    <dimen name="Main_Menu_Title_height">60dp</dimen>
+    <dimen name="top_panel_height">70dp</dimen>
+    <dimen name="top_panel_button_width">72dp</dimen>
+    <dimen name="top_panel_button_height">32dp</dimen>
+    <dimen name="side_panel_divider_width">1dp</dimen>
+    <dimen name="back_button_width">24dp</dimen>
+    <dimen name="bottom_bar_height">56dp</dimen>
+    <dimen name="bottom_bar_tabs_height">60dp</dimen>
+    <dimen name="bottom_bar_divider_width">1dp</dimen>
+    <dimen name="bottom_bar_elements_margin">30dp</dimen>
+    <dimen name="bottom_bar_message_counter_width">22dp</dimen>
+    <dimen name="bottom_bar_message_counter_height">16dp</dimen>
+    <dimen name="popup_window_width">370dp</dimen>
+    <dimen name="popup_window_header_margin">12dp</dimen>
+    <dimen name="popup_window_divider_height">1dp</dimen>
+    <dimen name="popup_window_line_margin">12dp</dimen>
+    <dimen name="popup_window_header_divider_height">2dp</dimen>
+    <dimen name="popup_window_border_width">2dp</dimen>
+    <dimen name="popup_window_border_radius">3dp</dimen>
+    <dimen name="popup_filters_divider">1dp</dimen>
+    <dimen name="popup_share_margin_out">40dp</dimen>
+    <dimen name="popup_share_margin_in">30dp</dimen>
+    <dimen name="popup_share_text_margin_top">5dp</dimen>
+    <dimen name="main_top_panel_buttons_margin">5dp</dimen>
+    <dimen name="main_zoom_button_size">30dp</dimen>
+    <dimen name="mm_message_counter_width">60dp</dimen>
+    <dimen name="mm_message_counter_height">44dp</dimen>
+    <dimen name="mm_text_margin_top">12dp</dimen>
+    <dimen name="mm_imagebutton_margin">5dp</dimen>
+    <dimen name="mm_imagebuttons_margin">100dp</dimen>
+    <dimen name="mmp_imagebuttons_layout_padding">40dp</dimen>
+    <dimen name="mmp_logo_padding">100dp</dimen>
+    <dimen name="mml_logo_padding">55dp</dimen>
+    <dimen name="mml_imagebutton_margin_left">80dp</dimen>
+    <dimen name="messages_imagebuttons_width">156dp</dimen>
+    <dimen name="messages_imagebuttons_height">32dp</dimen>
+    <dimen name="messages_element_layout_margin">15dp</dimen>
+    <dimen name="messages_element_margin_top">15dp</dimen>
+    <dimen name="messages_element_margin_bottom">7dp</dimen>
+    <dimen name="messages_element_margin5">5dp</dimen>
+    <dimen name="messages_element_margin10">10dp</dimen>
+    <dimen name="messages_element_divider_height">1dp</dimen>
+    <dimen name="message_margin15">15dp</dimen>
+    <dimen name="message_margin10">10dp</dimen>
+    <dimen name="detail_view_image_size">64dp</dimen>
+    <dimen name="detail_view_services_padding">5dp</dimen>
+    <dimen name="results_element_divider_height">1dp</dimen>
+    <dimen name="settings_text_margin_left">20dp</dimen>
+    <dimen name="settings_text_margin_right">70dp</dimen>
+    <dimen name="settings_value_margin_left">70dp</dimen>
+    <dimen name="settings_value_margin_right">20dp</dimen>
+    <dimen name="fontsize_main_menu">22sp</dimen>
+    <dimen name="fontsize_layout_header">20sp</dimen>
+    <dimen name="fontsize_bottom_bar_message_counter">12sp</dimen>
+    <dimen name="fontsize_popup_header">18sp</dimen>
+    <dimen name="fontsize_popup_items">17sp</dimen>
+    <dimen name="fontsize_pushmessage_header">18sp</dimen>
+    <dimen name="fontsize_pushmessage_time">14sp</dimen>
+    <dimen name="fontsize_messages_edittext">16sp</dimen>
+    <dimen name="fontsize_no_messages">24sp</dimen>
+    <dimen name="fontsize_results_name">17sp</dimen>
+    <dimen name="fontsize_results_address">15sp</dimen>
+    <dimen name="fontsize_details_address">16sp</dimen>
+    <dimen name="fontsize_notification_message">14sp</dimen>
+    <dimen name="fontsize_notification_counter">12sp</dimen>
+
+</resources>

@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.tablet.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            style="@style/top_bar_rel_lay_style">
+
+            <TextView
+                android:id="@+id/tvMainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/back_button_width"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fontsize_layout_header" />
+
+            <LinearLayout
+                android:id="@+id/layoutid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/searchView"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/iBtnFilters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/main_top_panel_buttons_margin"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:src="@drawable/main_filter" />
+
+                <ImageButton
+                    android:id="@+id/iBtnShowResultList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_top_panel_buttons_margin"
+                    android:layout_marginRight="@dimen/main_top_panel_buttons_margin"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:src="@drawable/main_list" />
+
+                <ImageButton
+                    android:id="@+id/iBtnShowMyPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_top_panel_buttons_margin"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:src="@drawable/select_main_position" />
+            </LinearLayout>
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="5dp"
+                android:actionViewClass="android.widget.SearchView"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:iconifiedByDefault="false"
+                android:showAsAction="always" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fullLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:divider="@drawable/divider_side_panel"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:id="@+id/relativeMapLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5">
+
+                <fragment
+                    android:id="@+id/mapMain"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <Button
+                    android:id="@+id/zoomInButton"
+                    android:layout_width="@dimen/main_zoom_button_size"
+                    android:layout_height="@dimen/main_zoom_button_size"
+                    android:layout_alignTop="@+id/mapMain"
+                    android:layout_alignRight="@+id/mapMain"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/select_main_zoom_in" />
+
+                <Button
+                    android:id="@+id/zoomOutButton"
+                    android:layout_width="@dimen/main_zoom_button_size"
+                    android:layout_height="@dimen/main_zoom_button_size"
+                    android:layout_below="@+id/zoomInButton"
+                    android:layout_alignRight="@+id/zoomInButton"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/select_main_zoom_out" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/resultListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5"
+                android:background="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/bottom_bar"
+        android:name="com.allpoint.activities.tablet.fragments.TabBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_panel_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

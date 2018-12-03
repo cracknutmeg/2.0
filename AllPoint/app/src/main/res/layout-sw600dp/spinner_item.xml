@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinnerView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/popupBackground"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:textColor="@color/shareGRAY"
+    android:textSize="@dimen/fontsize_popup_items" />

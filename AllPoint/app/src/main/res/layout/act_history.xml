@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.phone.HistoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDetails"
+        style="@style/top_bar_rel_lay_style"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvcancelhistory"
+            style="@style/top_bar_btn_cancel_style"
+            android:onClick="onIbtnCancelClicked" />
+
+        <TextView
+            android:id="@+id/tvcardhistoryTitle"
+            style="@style/top_bar_title_style"
+            android:text="@string/historyTitle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayoutDetails"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/curSaving"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:textColor="@color/apGreen"
+            android:textSize="@dimen/commonTextSize" />
+
+        <ExpandableListView
+            android:id="@+id/displayList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/curSaving"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/top_panel_height"
+            android:background="@android:color/transparent"
+            android:childDivider="#00000000"
+            android:dividerHeight="0dp"
+            android:footerDividersEnabled="false"
+            android:groupIndicator="@null"
+            android:headerDividersEnabled="false" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/bottom_bar"
+        android:name="com.allpoint.activities.phone.fragments.TabBarFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_panel_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

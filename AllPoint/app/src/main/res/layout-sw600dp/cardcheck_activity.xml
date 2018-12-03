@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    tools:context=".activities.CardCheckActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_panel_height"
+            android:background="@drawable/gradient_panel">
+
+            <TextView
+                android:id="@+id/cancel_card_check"
+                style="@style/top_bar_btn_cancel_style"
+                android:onClick="onIbtnCancelClicked" />
+
+            <TextView
+                style="@style/top_bar_title_style"
+                android:text="@string/check_card_title" />
+
+            <TextView
+                android:id="@+id/continue_button"
+                style="@style/top_bar_btn_login_style"
+                android:text="@string/continue_button"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/scan_card_text"
+            android:textColor="@color/apGreen"
+            android:textSize="@dimen/commonTextSize"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/scan_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:src="@drawable/scan_camera" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/text_cardactivity_text"
+            android:textColor="@color/apGreen"
+            android:textSize="@dimen/commonTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/or_text"
+            android:textColor="@color/apGreen"
+            android:textSize="@dimen/commonTextSize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/text_card_manual_text"
+            android:textColor="@color/apGreen"
+            android:textSize="@dimen/commonTextSize" />
+
+        <EditText
+            android:id="@+id/edtCard_number"
+            style="@style/edit_text_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:hint="@string/card_number"
+            android:inputType="numberSigned"
+            android:textColorHint="@color/lightGray"
+            android:textSize="@dimen/commonTextSize" />
+
+        <Button
+            android:id="@+id/btnAddCard"
+            style="@style/button_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/add_card" />
+    </LinearLayout>
+
+</ScrollView>

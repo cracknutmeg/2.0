@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".activities.tablet.MessageActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        style="@style/top_bar_rel_lay_style">
+
+        <TextView
+            android:id="@+id/tvMessagesTitle"
+            style="@style/top_bar_title_style"
+            android:text="@string/en_messagesLayoutTitle" />
+
+        <ToggleButton
+            android:id="@+id/tBtnEditMode"
+            android:layout_width="@dimen/top_panel_button_width"
+            android:layout_height="@dimen/top_panel_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:enabled="false"
+            android:textColor="@drawable/select_messages_editmode"
+            android:textSize="@dimen/fontsize_messages_edittext" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!-- suppress AndroidLintUseCompoundDrawables -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottom_bar"
+            android:baselineAligned="false"
+            android:divider="@drawable/divider_side_panel"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5.7">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/editLayout">
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@null"
+                        android:choiceMode="singleChoice"
+                        android:listSelector="@color/alternateRow"
+                        android:scrollingCache="false" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutNoMessages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/iViewNoMessages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/messages_no_messages" />
+
+                        <TextView
+                            android:id="@+id/tvNoMessages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:text="@string/en_messagesNoMessagesText"
+                            android:textColor="@color/lightGray"
+                            android:textSize="@dimen/fontsize_no_messages" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/editLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottom_bar_tabs_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/popupBackground"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/bottom_bar_divider_width"
+                        android:background="@color/lightGray"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnReadMessages"
+                            android:layout_width="@dimen/messages_imagebuttons_width"
+                            android:layout_height="@dimen/messages_imagebuttons_height"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="30dp"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:onClick="onBtnReadMessagesClicked"
+                            android:text="@string/en_messagesReadMessages"
+                            android:textColor="@drawable/select_messages_editing"
+                            android:textSize="@dimen/fontsize_messages_edittext" />
+
+                        <Button
+                            android:id="@+id/btnDeleteMessages"
+                            android:layout_width="@dimen/messages_imagebuttons_width"
+                            android:layout_height="@dimen/messages_imagebuttons_height"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:text="@string/en_messagesDeleteMessages"
+                            android:textColor="@drawable/select_messages_editing"
+                            android:textSize="@dimen/fontsize_messages_edittext" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/messageViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.3"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvMessageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/message_margin15"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/message_margin15"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_pushmessage_header" />
+
+                <TextView
+                    android:id="@+id/tvMessageTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMessageTitle"
+                    android:layout_marginLeft="@dimen/message_margin15"
+                    android:layout_marginTop="@dimen/messages_element_margin5"
+                    android:layout_marginRight="@dimen/message_margin15"
+                    android:textColor="@color/shareGRAY"
+                    android:textSize="@dimen/fontsize_pushmessage_time" />
+
+                <view
+                    android:id="@+id/wViewRichPushView"
+                    class="com.urbanairship.widget.UAWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tvMessageTime"
+                    android:layout_marginLeft="@dimen/message_margin15"
+                    android:layout_marginTop="@dimen/message_margin10"
+                    android:layout_marginRight="@dimen/message_margin15" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/bottom_bar"
+            android:name="com.allpoint.activities.tablet.fragments.TabBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_panel_height"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

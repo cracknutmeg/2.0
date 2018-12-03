@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.tablet.CardListActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_panel_height"
+            android:background="@drawable/gradient_panel">
+
+            <TextView
+                android:id="@+id/cancelcardList"
+                android:onClick="onIbtnCancelCardListClicked"
+                style="@style/top_bar_btn_cancel_style" />
+
+            <TextView
+                style="@style/top_bar_title_style"
+                android:text="Cards" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleLayout"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/en_cardScreenTitle"
+            android:textColor="@color/apGreen"
+
+            android:textSize="@dimen/commonTextSize" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cardlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/addcard"
+            android:layout_below="@+id/titletext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:dividerHeight="0dp" />
+
+
+        <Button
+            android:id="@+id/addcard"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@color/grayBackColor"
+            android:gravity="left|center_vertical"
+            android:onClick="onIbtnAddCardClicked"
+            android:paddingLeft="20dp"
+            android:text="@string/en_addCard"
+            android:textColor="@color/grey_text_color"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/bottom_bar"
+        android:name="com.allpoint.activities.tablet.fragments.TabBarFragment_"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_panel_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center" />
+</RelativeLayout>

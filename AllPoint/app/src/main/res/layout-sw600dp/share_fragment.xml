@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress AndroidLintOverdraw, AndroidLintOverdraw, AndroidLintOverdraw -->
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/popup_border"
+        android:clickable="false" android:focusable="false" android:focusableInTouchMode="false"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="false" android:layout_alignParentRight="false"
+        android:divider="@drawable/divider_popup_header" android:showDividers="middle"
+        android:padding="@dimen/popup_window_border_width">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/en_shareTitle"
+              android:id="@+id/tvShareVia" android:textColor="@color/lightGray"
+              android:textSize="@dimen/fontsize_popup_header" android:gravity="center|left"
+              android:layout_marginLeft="@dimen/popup_window_header_margin"
+              android:layout_marginTop="@dimen/popup_window_header_margin"
+              android:textStyle="bold"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:clickable="false"
+            android:focusable="false" android:focusableInTouchMode="false" android:baselineAligned="false">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" android:layout_marginLeft="@dimen/popup_share_margin_out"
+                android:layout_marginTop="@dimen/popup_share_margin_out"
+                android:layout_marginBottom="@dimen/popup_share_margin_out"
+                android:layout_marginRight="@dimen/popup_share_margin_in">
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shareEmailImageButton" android:background="@null"
+                    android:focusableInTouchMode="false" android:clickable="true" android:scaleType="fitCenter"
+                    android:src="@drawable/share_gmail" android:layout_gravity="center_horizontal"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/en_shareEmail"
+                    android:id="@+id/tvShareEmail" android:gravity="center" android:textColor="@color/shareGRAY"
+                    android:focusableInTouchMode="false" android:clickable="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/fontsize_popup_items"
+                    android:layout_marginTop="@dimen/popup_share_text_margin_top"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="false"
+                      android:focusable="false" android:focusableInTouchMode="false"
+                      android:layout_marginLeft="@dimen/popup_share_margin_in"
+                      android:layout_marginTop="@dimen/popup_share_margin_out"
+                      android:layout_marginRight="@dimen/popup_share_margin_out"
+                      android:layout_marginBottom="@dimen/popup_share_margin_out">
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:id="@+id/sharebySmsImageButton"
+                         android:background="@null"
+                         android:focusableInTouchMode="false"
+                         android:clickable="true" android:scaleType="fitCenter" android:src="@drawable/share_messages"
+                         android:layout_gravity="center_horizontal"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/en_shareMessaging"
+                      android:id="@+id/tvShareSms" android:gravity="center" android:layout_gravity="center_horizontal"
+                      android:textColor="@color/shareGRAY"
+                      android:clickable="true" android:focusableInTouchMode="false"
+                      android:textSize="@dimen/fontsize_popup_items"
+                      android:layout_marginTop="@dimen/popup_share_text_margin_top"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

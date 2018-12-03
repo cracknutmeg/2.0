@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+        >
+    <ImageView
+            android:layout_width="@dimen/detail_view_image_size"
+            android:layout_height="@dimen/detail_view_image_size"
+            android:layout_marginRight="10dip"
+            android:id="@+id/iViewNotificationIcon"
+            android:src="@drawable/app_icon"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:clickable="false"
+            android:focusable="false" android:focusableInTouchMode="false">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvNotificationSubject"
+                    android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:layout_marginRight="10dip" android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" android:layout_toLeftOf="@+id/tvNotificationTime"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                      android:id="@+id/tvNotificationTime"
+                      android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent"
+                      android:gravity="center_vertical"
+                      android:maxLines="1" android:layout_marginRight="10dip" android:layout_gravity="right"
+                      android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                    />
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:textSize="@dimen/fontsize_notification_message"
+                    android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent"
+                    android:layout_marginRight="10dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvNotificationMessage"
+                    android:gravity="center_vertical"
+                    android:maxLines="2" android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" android:layout_toLeftOf="@+id/layoutIndicator"/>
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" android:layout_marginRight="10dip"
+                    android:id="@+id/layoutIndicator" android:gravity="center">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iViewSmallNotification"
+                        android:src="@drawable/bottom_message_counter" android:scaleType="centerInside"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvNotificationsCount"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fontsize_notification_counter"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

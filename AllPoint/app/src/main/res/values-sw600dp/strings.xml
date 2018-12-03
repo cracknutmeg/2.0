@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Allpoint</string>
+
+    <string name="en_mainMenuSearchTitle">Search</string>
+    <!-- Interface text in English -->
+
+    <string name="en_mainMenuMessagesTitle">Messages</string>
+    <string name="en_mainMenuSettingsTitle">Settings</string>
+    <string name="en_mainMenuAboutTitle">About</string>
+    <string name="en_mainMenuHome">Home</string>
+    <string name="en_mainMenuMore">More</string>
+    <string name="en_mainMenuScanTitle">Verify Card</string>
+    <string name="en_mainMenuTransTitle">History</string>
+    <string name="en_messagesLayoutTitle">Messages</string>
+    <string name="en_messagesDeleteMessages">Delete</string>
+    <string name="en_messagesReadMessages">Mark as Read</string>
+    <string name="en_messagesEditTextOn">Done</string>
+    <string name="en_messagesEditTextOff">Edit</string>
+    <string name="en_messagesNoMessagesText">No Messages</string>
+    <string name="en_detailViewLayoutTitle">Details</string>
+    <string name="en_detailViewServicesTitle">Services</string>
+    <string name="en_detailViewHoursTitle">Hours</string>
+    <string name="en_pinViewLayoutTitle">View Location</string>
+    <string name="en_searchResultLayoutTitle">Search Result</string>
+    <string name="en_aboutLayoutTitle">About</string>
+    <string name="en_settingsSearchPreferenceTitle">SEARCH PREFERENCE</string>
+    <string name="en_settingsVisitGooglePlay">Visit us on Google Play</string>
+    <string name="en_registrationProfile">Sign Up</string>
+    <string name="en_settingsEditProfile">Profile</string>
+    <string name="en_settingsGeofenceOnOff">Geofence Alerts</string>
+    <string name="en_settingsLaunchWithNearMe">Launch when near me</string>
+  
+    <string name="en_settingsDistanceUnits">Distance Unit</string>
+    <string name="en_settingsDistanceUnitsKm">Kilometers</string>
+    <string name="en_settingsDistanceUnitsMi">Miles</string>
+    <string name="en_settingsLanguage">Language</string>
+    <string name="en_settingsFeedback">Feedback</string>
+    <string name="err_server_Connection">Unable To Connect Server, Please Check Internet Connection!</string>
+    
+    
+    <string name="en_settingsAppVersion">Version</string>
+    <string name="en_shareTitle">Share via</string>
+    <string name="en_shareEmail">EMail</string>
+    <string name="en_shareMessaging">Messaging</string>
+    <string name="en_messageLayoutTitle">Message View</string>
+    <string name="en_dialogCannotGetPosition">Your location cannot be determined correctly at this moment</string>
+    <string name="en_dialogOk">OK</string>
+    <string name="en_dialogCancel">Cancel</string>
+    <string name="en_dialogLoadingTitle">Loading</string>
+    <string name="en_dialogPleaseWait">Please wait...</string>
+    <string name="en_dialogCannotConnectTitle">There is no connectivity</string>
+    <string name="en_dialogCannotConnectText">Network connectivity is necessary to use this feature. Please check the
+        network settings on your phone.
+</string>
+    <string name="en_dialogTxtForMaxAttempt">You have reached maximum attempt to reset password.Please resend OTP</string> 
+    <string name="en_dialogPanInActive">Card is not in Surcharge-Free Network.</string>
+    <string name="en_dialogXmlParserNotInitialized">Parser was not initialized.</string>
+    
+    <string name="en_dialogSmsNotSupported">Sms sending option is not supported on this device.</string>
+    <string name="en_dialogParsingError">Error occurred while processing query from server. Please try again.</string>
+    <string name="en_dialogUpdate">New version is available. Please, update now.</string>
+    <string name="en_dialogForceUpdate">You should update Allpoint application right now.</string>
+    <string name="en_dialogRemoveMessages">Are you sure want to remove selected messages?</string>
+    <string name="en_dialogReadMessages">Are you sure want to mark as read selected messages?</string>
+    <string name="en_dialogMessageMarked">Message was marked as read</string>
+    <string name="en_dialogServiceUnavailable">Currently our service is unavailable. Please try later.</string>
+    <string name="en_dialogPlayServicesUnavailable">Google Play Services is unavailable. Please try later.</string>
+    <string name="en_cardScreenTitle">CLICK A CARD TO REVIEW OR EDIT...</string>
+    <string name="en_addCard">Add Card</string>
+    <string name="en_amount">Amount</string>
+    <string name="en_date">Date</string>
+    <string name="en_txntype">Transaction Type</string>
+    <string name="en_titleTransaction">Transactions</string>
+    <string name="en_TermsAndCondtionTitle">Terms And Conditions</string>
+    <string name="en_dialogNoResults">No results were found.</string>
+    <string name="en_card_history_disable">Transaction history is not available at this time.</string>
+    <!-- Interface text in Spanish -->
+    <!-- Main Menu -->
+    <string name="es_mainMenuMessagesTitle">Mensajes</string>
+    <string name="es_mainMenuSettingsTitle">Ajustes</string>
+    <string name="es_mainMenuAboutTitle">Acerca de</string>
+    <string name="es_mainMenuSearchTitle">Buscar</string>
+    <string name="es_mainMenuHome">Casa</string>
+    <string name="es_mainMenuMore">Más</string>
+    <string name="es_mainMenuScanTitle">tomografía</string>
+    <string name="es_mainMenuTransTitle">historia</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="changePassText">Please enter your current or temporary password and new password.</string>
+     <string name="changePassTextforForget">Please enter your new password and confirm password.</string>
+     <string name="Verify_email_title">Verify Email</string>
+     <string name="first_time_reg_msg">Please enter your email address below for verification</string>
+     <string name="forgetPassText">Please provide your registered email address to receive instructions to reset your password</string>
+    <string name="username_emailid_hint">Registered Email</string>
+    <string name="register_emailid_hint">Email</string>
+<!-- OTP Screen -->
+    <string name="otp_title">Validate OTP</string>
+    <string name="otp_hint">Enter OTP</string>
+    <string name="otp_info_text">Please check your email and enter the One Time Password (OTP) below</string>
+    <string name="Err_Msg_OTPValid">Please enter a valid Valid One Time Password"</string>
+    <string name="otp_not_received">Not received One Time Password yet?</string>
+    <string name="otp_info_sms_text">Please enter One Time Password received by SMS</string>
+    <string name="otp_Email_hint">Email One Time Password</string>
+    <string name="otp_SMS_hint">SMS One Time Password</string>
+    
+    <string name="otp_email_not_received">Not received Email One Time Password yet?</string>
+    <string name="otp_sms_not_received">Not received SMS One Time Password yet?</string>
+    <string name="otp_reg_received">Not received OTP yet?</string>
+    <string name="otp_resend">Resend OTP</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="confirm_new_password_hint">Confirm New Password</string>
+    <string name="old_password_hint">Old Password</string>
+    <string name="send">Send</string>
+    <string name="card_number">Card Number</string>
+    <string name="scan_card_text">Scan your card</string>
+    <string name="text_cardactivity_text">Tap on camera image to verify your card’s access to the Allpoint Surcharge Free Network</string>
+    <string name="or_text">-------------------------- OR -------------------------</string>
+    <string name="text_card_manual_text">To verify your card manually, please enter your full card number in the box below to verify your cards access to the Allpoint Surcharge Free Network.</string>
+    <string name="login_atmpass">Signup For ATMpass</string>
+    <string name="add_card">Verify Card</string>
+    
+    <string name="forget_password_title">Forgot Password</string>
+    <string name="check_card_title">Check Card</string>
+    <string name="change_password_title">Change Password</string>
+    <string name="terms_and_conditions">Terms And Conditions</string>
+    <string name="card_success">Card Added</string>
+    <string name="card_success_msg">Success !</string>
+
+    
+    <!-- Top Bar -->
+    <string name="login">Sign In</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="signup_title">Sign Up</string>
+	<string name="continue_button">Continue</string>
+	<string name="en_settingslogout">Logout</string>
+    
+    <!-- Login -->
+    <string name="email_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="account_history">Find Allpoint ATMs and receive alerts for nearby surcharge free ATM’s</string>
+    <string name="signup">Sign Up Now</string>
+    <string name="forgetPassword">Forgot your Password?</string>
+    <string name="skip">Skip</string>
+    <string name="user_not_active">OTP sent on your email id, Please validate OTP to complete Registration process.</string>
+    
+
+    <!-- Sign Up -->
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="confirm_email">Confirm Email Address</string>
+    <string name="email_msg">This will be your Username</string>
+    <string name="mobile_hint">Mobile Number</string>
+    <string name="postal_zipcode_hint">Postal Zipcode</string>
+    
+    <string name="confirm_password_hint">Confirm Password</string>
+    
+    <string name="subscribe">Subscribe</string>
+    <string name="tc">Yes, please alert me about nearby surcharge-free ATMs. By subscribing, I agree to the
+ 	<u>Terms of use.</u></string>
+    
+    <string name="card_fail_msg">Failed!</string>
+    <string name="maskCardNo">XXXX XXXX XXXX</string>
+    <!-- <string name="success_message">Card Added – Success! This means the card is present in the Allpoint Network and is now added and will display in the list of cards.</string> -->
+    <string name="success_message">Congratulations! Your card participates in the Allpoint Network. Use the search feature to locate your most convenient Allpoint surcharge free ATM.</string>
+    <string name="failure_message">Your card does not currently participate in the Allpoint Network. Please contact your financial institution about joining Allpoint.</string>
+    
+    <string name="en_updateProfileSave">Save</string>
+    <string name="card_failue_title">Invalid Card</string>
+    <string name="historyTitle">Cards</string>
+
+    <string name="reg_mob_no_msg">Registration Invalid. Please Try Again</string>
+    <!-- Validation Messages -->
+    <string name="Err_Msg_OTP">Code Verification is failed</string>
+    <string name="Err_Msg_FIrstName">Please enter First Name</string>
+    <string name="Err_Msg_LsatName">Please enter Last Name"</string>
+    <string name="Err_Msg_EmptySpace">Empty spaces are not allowed!"</string>
+    <string name="Err_MSG_EMaild">Please enter Email Address"</string>
+    <string name="Err_Msg_EmailValid">Please enter a valid Email Address"</string>
+    <string name="Err_MSG_ConfirmEMaild">Please enter Confirm Email Address"</string>
+    <string name="Err_Msg_ConfirmEmailValid">Please enter a valid Confirm Email Address"</string>
+    <string name="Err_Msg_mobileNumber">Please enter Mobile Number"</string>
+    <string name="Err_Msg_MobileValidtaion">Please enter a valid Mobile Number"</string>
+    <string name="Err_msg_Password">Please enter password"</string>
+    <string name="Err_msg_ConfirmPassword">Please enter Confirm Password"</string>
+    <string name="Err_msg_ConfrimPassword">Please confirm the Password"</string>
+    <string name="Err_Msg_PwdCombMatch">Password should meet the password combination"</string>
+    <string name="Err_Msg_ConfirmCombPwdMatch">Confirm Password should meet the Password combination"</string>
+    <string name="Err_Msg_PwdLength">Password should be in between the range of 8 - 16 digit"</string>
+    <string name="Err_Msg_PwdMatch">Password &amp; Confirm Password should matched"</string>
+    <string name="Err_Msg_EmailMatch">Email Address &amp; Confirm Email Address should match"</string>
+    
+    <string name="Err_Msg_SwitchTurnOn">Please turn Subscribe on to receive Notification"</string>
+    <string name="Err_Msg_PasswordCharactors">Password should be of 8-16 characters with a mix of uppercase, lowercase, numbers and special characters</string>
+    
+    <string name="Err_Msg_PasswordConfirmCharactors">Confirm Password should be of 8-16 characters with a mix of uppercase, lowercase, numbers and special characters</string>
+    
+    <string name="Err_Msg_Zipcode">Please enter a Zip code"</string>
+    <string name="Err_Msg_ZipValidtaion">Please enter a valid Zip code"</string>
+    <string name="Err_Msg_AllInfo">Enter all Information</string>
+    <string name="Err_Msg_ValidFIrstName">Please enter a valid First Name"</string>
+    <string name="Err_Msg_ValidlastName">Please enter a valid Last Name"</string>
+    <string name="Err_Msg_cardNumber">Please enter a Card Number"</string>
+    <string name="Err_Msg_ValidchackcardNumber">Please enter a valid Card Number"</string>
+    <string name="Err_Msg_ValidcardNumber">Please enter 16 digit Card Number "</string>
+    <string name="password_msg">Password should be of 8-16 characters with a mix of uppercase, lowercase, numbers and special characters </string>
+
+    
+
+    <!-- Change Password Messages -->
+    <string name="Err_msg_EnterOldPassword">Please enter an Old Password"</string>
+    <string name="Err_msg_EnterNewPassword">Please enter a New Password"</string>
+    <string name="Err_msg_EnterConfirmPassword">Please enter a Confirm Password"</string>
+    <string name="Err_Msg_ChangeOldPassword">Old Password should contain 8-16 character with an uppercase letter, a
+        lowercase letter, special characters and a number.</string>
+    
+    <string name="alertMsg_IncorrectPassword">Please enter valid Password.</string>
+    
+    <string name="Err_Msg_ChangeNewPassword">New Password should contain 8-16 character with an uppercase letter, a
+        lowercase letter, special characters and a number.</string>
+    
+    <string name="Err_Msg_ChangeConfirmPassword">Confirm Password should contain 8-16 character with an uppercase
+        letter, a lowercase letter, special characters and a number.</string>
+    
+     
+     <string name="app_login">Login</string>
+     
+     <string name="app_logout">Logout</string>
+     
+    
+    
+     
+ 
+    
+    
+    <string name="en_filtersLayoutTitle">Filter</string>
+    <string name="en_filtersSelectTitle">SELECT FILTER BY</string>
+    <string name="en_filtersBtnDone">Done</string>
+    <string name="en_settingsLayoutTitle">Settings</string>
+
+    <!-- Spannish -->
+
+
+	<!-- Login -->
+	<string name="es_email_hint">Nombre de usuario</string>
+    <string name="es_password_hint">contraseña</string>
+    <string name="es_account_history">Encuentra cajeros automáticos Allpoint , recibirás un email / Ofertas y comprobar su historial de la cuenta</string>
+    <string name="es_signup">Regístrese ahora</string>
+    <string name="es_forgetPassword">¿Olvidaste tu contraseña?</string>
+    <string name="es_skip">omitir</string>
+    
+ 	
+
+	<!-- Session Invalid Error Message -->
+    <string name="msg_sessionInvalid">Session Expired! Please Login.</string>
+    <!-- Main Menu -->
+
+    <!-- Alert Messages -->
+    <string name="alertMsg_EnterPass">Please enter Password.</string>
+    <string name="alertMsg_EnterUserName">Please enter your Username.</string>
+    <string name="alertMsg_EnterUNandPW">Please enter Username and Password.</string>
+    <string name="alertMsg_EntervalidUN">Please enter valid Username.</string>
+   
+    <string name="curSavings">Current Savings :</string>
+    <string name="historyLoginMsg">You need to Login to see transactions history.</string>
+    <string name="deleteCardMsg">To Delete card swipe right to left.</string>
+    <string name="approxLocation">Approximate Location</string>
+    <string name="CrdNoHind">Card Number</string>
+    <string name="no_trans_found_msg">No transactions found</string>
+    <string name="card_add_msg">You Need to Login to Verify Card.</string>
+
+    <!-- Sign Up Spanish -->
+    <string name="es_first_name_hint">Nombre de pila</string>
+    <string name="es_last_name_hint">Apellido</string>
+    <string name="es_email">Identificación de correo</string>
+    <string name="es_confirm_email">Confirmar Correo -Id</string>
+    <string name="es_email_msg">This will be your Username</string>
+    <string name="es_mobile_hint">Número de celular</string>
+    <string name="es_postal_zipcode_hint">Código Postal Postal</string>
+    
+    <string name="es_confirm_password_hint">Confirmar contraseña</string>
+    <string name="es_password_msg">Sí , por favor me avise de cajeros automáticos gratuitos cerca de mi ubicación. Al hacer uso de " Continuar " Estoy de acuerdo con la</string>
+    <string name="es_subscribe">suscribir</string>
+    <string name="es_tc">Sí , por favor me avise de cajeros automáticos gratuitos cerca de mi ubicación. Al hacer uso de " Continuar " Estoy de acuerdo con la
+    <u>Condiciones de uso.</u></string>
+    <string name="msg_NoCard">No Card is present.Please add a Card</string>
+    <string name="es_filtersLayoutTitle">Filtrar</string>
+    <string name="es_filtersBtnDone">Hecho</string>
+    	
+    <string name="es_filtersSelectTitle">SELECCIÓN DE FILTRO</string>
+ 
+    <string name="es_messagesLayoutTitle">Mensajes</string>
+    <string name="es_messagesDeleteMessages">Borrar</string>
+    <string name="es_messagesEditTextOn">Hecho</string>
+    <string name="es_messagesEditTextOff">Editar</string>
+    <string name="es_messagesReadMessages">Marcar como Leído</string>
+    <string name="es_messagesNoMessagesText">No Mensajes</string>
+    <string name="es_detailViewLayoutTitle">Detallado</string>
+    <string name="es_detailViewServicesTitle">Servicios</string>
+    <string name="es_detailViewHoursTitle">HORAS</string>
+    <string name="es_pinViewLayoutTitle">Ver Ubicación</string>
+    <string name="es_searchResultLayoutTitle">Búsqueda</string>
+    <string name="es_aboutLayoutTitle">Acerca de</string>
+    <string name="es_settingsLayoutTitle">Ajustes</string>
+    <string name="es_settingsSearchPreferenceTitle">BUSCAR PREFERENCIA</string>
+    <string name="es_settingsVisitGooglePlay">Visita en Google Play</string>
+    <string name="es_settingsLaunchWithNearMe">Inicie con cerca de mí</string>
+    <string name="es_settingsDistanceUnits">Unidades de distancia</string>
+    <string name="es_settingsDistanceUnitsKm">Kilómetros</string>
+    <string name="es_settingsDistanceUnitsMi">Millas</string>
+    <string name="es_settingsLanguage">Idioma</string>
+    <string name="es_settingsFeedback">Retroalimentación</string>
+    <string name="es_settingsAppVersion">VERSIÓN</string>
+    <string name="es_shareTitle">COMPARTIR A TRAVÉS DE</string>
+    <string name="es_shareEmail">EMail</string>
+    <string name="es_shareMessaging">Mensajería</string>
+    <string name="es_messageLayoutTitle">Ver Mensaje</string>
+    <string name="es_dialogCannotGetPosition">Su ubicación no puede ser encontrado. Por favor activar Servicios de
+        ubicación en la configuración de la aplicación Allpoint
+    </string>
+    <string name="es_dialogOk">Bueno</string>
+    <string name="es_dialogCancel">Cancelar</string>
+    <string name="es_dialogLoadingTitle">Carga</string>
+    <string name="es_dialogPleaseWait">Por favor, espere ...</string>
+    <string name="es_dialogCannotConnectTitle">No Conectividad</string>
+    <string name="es_dialogCannotConnectText">No se puede conectar al servidor. Por favor, compruebe su conexión a
+        Internet.
+</string>
+    <string name="es_dialogXmlParserNotInitialized">Analizador no se ha inicializado.</string>
+    <string name="es_dialogNoResults">No hay resultados.</string>
+    <string name="es_dialogSmsNotSupported">Sms opción de envío no son compatibles con este dispositivo.</string>
+    <string name="es_dialogParsingError">Se produjo un error al procesar la consulta desde el servidor. Por favor,
+        inténtelo de nuevo.
+    </string>
+    <string name="es_dialogUpdate">La nueva versión está disponible. Por favor, actualiza ahora.</string>
+    <string name="es_dialogForceUpdate">Debe actualizar la aplicación Allpoint en estos momentos.</string>
+    <string name="es_dialogRemoveMessages">Está seguro de que desea eliminar los mensajes seleccionados?</string>
+    <string name="es_dialogReadMessages">Seguro desea marcar como leídos los mensajes seleccionados?</string>
+    <string name="es_dialogMessageMarked">Mensaje ha sido marcado como leído</string>
+    <string name="es_dialogServiceUnavailable">Actualmente nuestro servicio no está disponible. Por favor, intente más
+        tarde.
+    </string>
+    <string name="es_dialogPlayServicesUnavailable">Google Play Services no está disponible. Por favor, intente más
+        tarde.
+    </string>
+
+    <!-- Validation Messages -->
+    <string name="es_Err_Msg_FIrstName">Por favor ingrese Nombre</string>
+    <string name="es_Err_Msg_LsatName">Introduzca Apellido</string>
+    <string name="es_Err_Msg_EmptySpace">Espacios vacíos no se permiten !</string>
+    <string name="es_Err_MSG_EMaild">Por favor introduzca Correo -id</string>
+    <string name="es_Err_Msg_EmailValid">Por favor, introduzca un correo -id válidas</string>
+    <string name="es_Err_MSG_ConfirmEMaild">Introduzca Confirmar Correo -id</string>
+    <string name="es_Err_Msg_ConfirmEmailValid">Por favor introduzca una válida Confirmar Email -id</string>
+    <string name="es_Err_Msg_mobileNumber">Introduzca número de móvil</string>
+    <string name="es_Err_Msg_MobileValidtaion">Por favor, introduzca un número de móvil válido</string>
+    <string name="es_Err_msg_Password">Por favor, ingrese contraseña</string>
+    <string name="es_Err_msg_ConfrimPassword">Confirme la contraseña</string>
+    <string name="es_Err_Msg_PwdCombMatch">Contraseña debe cumplir la combinación de contraseña</string>
+    <string name="es_Err_Msg_ConfirmCombPwdMatch">Confirmar contraseña debe cumplir con la combinación Contraseña</string>
+    <string name="es_Err_Msg_PwdLength">La contraseña debe estar entre el rango de 8 a 16 dígitos</string>
+    <string name="es_Err_Msg_PwdMatch">Contraseña y Confirmar contraseña debe emparejado</string>
+    <string name="es_Err_Msg_EmailMatch">Correo -Id y Confirmar Correo -Id debe coincidir</string>
+    <string name="es_Err_Msg_SwitchTurnOn">Desconecte Suscríbete a recibir notificación</string>
+    <string name="es_Err_Msg_PasswordCharactors">La contraseña debe contener 8-16 caracteres con una letra mayúscula , una letra minúscula , caracteres especiales y un número.</string>
+	<string name="es_Err_Msg_PasswordConfirmCharactors">Confirmar contraseña debe contener 8-16 caracteres con una letra mayúscula , una letra minúscula , caracteres especiales y un número.</string>
+    <string name="es_Err_Msg_Zipcode">Por favor, introduzca un código postal</string>
+    <string name="es_Err_Msg_ZipValidtaion">Por favor ingrese un código postal válido</string>
+    <string name="es_Err_Msg_AllInfo">Ingrese toda la información</string>
+    <string name="es_Err_Msg_ValidFIrstName">Por favor, ingrese un nombre válido</string>
+    <string name="es_Err_Msg_ValidlastName">Por favor ingrese un apellido válido</string>
+    <string name="es_Err_Msg_cardNumber">Por favor, introduzca un número de tarjeta</string>
+    <string name="es_Err_Msg_ValidchackcardNumber">Por favor, introduzca un número de tarjeta válida</string>
+    <string name="es_Err_Msg_ValidcardNumber">Introduzca Número de tarjeta de 16 dígitos</string>
+	<!-- Change Password Messages -->
+    <string name="es_Err_msg_EnterOldPassword">Por favor, introduzca una contraseña antigua</string>
+    <string name="es_Err_msg_EnterNewPassword">Por favor, introduzca una nueva contraseña</string>
+    <string name="es_Err_msg_EnterConfirmPassword">Por favor ingrese un Confirm Password</string>
+    <string name="es_Err_Msg_ChangeOldPassword">Antiguo contraseña debe contener 8-16 caracteres con una letra mayúscula , una letra minúscula , caracteres especiales y un número.</string>
+    <string name="es_Err_Msg_ChangeNewPassword">Nueva contraseña debe contener 8-16 caracteres con una letra mayúscula , una letra minúscula , caracteres especiales y un número.</string>
+    <string name="es_Err_Msg_ChangeConfirmPassword">Confirmar contraseña debe contener 8-16 caracteres con una letra mayúscula , una letra minúscula , caracteres especiales y un número.</string>
+
+    <string name="es_login">ingresar</string>
+    <string name="es_cancel_button">cancelar</string>
+    <string name="es_signup_title">Contratar</string>
+	<string name="es_continue_button">continuar</string>
+	<string name="es_settingslogout">cerrar sesión</string>
+	
+	
+ 	<string name="es_settingsGeofenceOnOff">Establecer Geofence</string>
+ 	<string name="es_TermsAndCondtionTitle">Términos Y Condiciones</string>
+ 	
+    <string name="mtm_accept_cert">Accept Unknown Certificate?</string>
+    <string name="mtm_trust_anchor">The server certificate is not signed by a known Certificate Authority.</string>
+    <string name="mtm_cert_expired">The server certificate is expired.</string>
+    <string name="mtm_accept_servername">Accept Mismatching Server Name?</string>
+    <string name="mtm_hostname_mismatch">Server could not authenticate as \&quot;%s\&quot;. The certificate is only valid for:</string>
+
+    <string name="mtm_connect_anyway">Do you want to connect anyway?</string>
+    <string name="mtm_cert_details">Certificate details:</string>
+
+    <string name="mtm_decision_always">Always</string>
+    <string name="mtm_decision_once">Once</string>
+    <string name="mtm_decision_abort">Abort</string>
+
+    <string name="mtm_notification">Certificate Verification</string>
+
+</resources>

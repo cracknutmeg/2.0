@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="lightGray">#A8A9AD</color>
+    <color name="messageEditActive">#0D7AFF</color>
+    <color name="popupBackground">#F5F5F5</color>
+    <color name="editingMessagesOff">#C1C1C1</color>
+    <color name="servicesAlternate">#F3F3F3</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="greenLine">#009444</color>
+    <color name="shareGRAY">#58595B</color>
+    <color name="apGreen">#00982C</color>
+    <color name="alternateRow">#E5F0EB</color>
+    <color name="topPanelDivider">#77C28B</color>
+    <!-- <color name="controlDisabled">#99FFFFFF</color> -->
+    <color name="controlDisabled">#0040FF</color>
+    <color name="msgBottomBack">#CFCFCF</color>
+    <color name="splashBackgroundStart">#26AF70</color>
+    <color name="splashBackgroundEnd">#107C4B</color>
+    <color name="top_bar">#5EB776</color>
+    <color name="registration_body">#ffffff</color>
+    <color name="color_primary">#04597C</color>
+    <color name="color_primary_dark">#212121</color>
+    <color name="color_accent">#5AC8D0</color>
+    <color name="message_read">#22555555</color>
+    <color name="primary_text">#424242</color>
+    <color name="textColor">#F7FE2E</color>
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+    <color name="red">#FF3B00</color>
+    <color name="red_press">#990000</color>
+
+    <color name="grayBackColor">#ededed</color>
+    <color name="grey_text_color">#666666</color>
+</resources>

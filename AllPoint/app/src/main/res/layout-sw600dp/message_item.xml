@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_marginTop="@dimen/messages_element_margin_top"
+            android:layout_marginBottom="@dimen/messages_element_margin_bottom">
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/chBoxMessages" android:layout_marginLeft="10dp" android:layout_gravity="center"
+                android:focusable="false" android:clickable="false" android:focusableInTouchMode="false"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="false" android:focusable="false" android:focusableInTouchMode="false">
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/linearLayout"
+                          android:layout_marginRight="@dimen/messages_element_layout_margin" android:focusable="false">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/tvPushMessage" android:textSize="@dimen/fontsize_pushmessage_header"
+                          android:gravity="fill"
+                          android:layout_marginTop="@dimen/messages_element_margin5"
+                          android:layout_marginRight="@dimen/messages_element_margin10"
+                          android:layout_marginBottom="@dimen/messages_element_margin5" android:textColor="@color/black"
+                          android:layout_marginLeft="@dimen/messages_element_margin5"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/linearLayout1"
+                          android:layout_marginRight="@dimen/messages_element_layout_margin" android:focusable="false">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/tvTime" android:textSize="@dimen/fontsize_pushmessage_time"
+                          android:gravity="left"
+                          android:layout_marginRight="@dimen/messages_element_margin10"
+                          android:layout_marginBottom="@dimen/messages_element_margin5"
+                          android:textColor="@color/shareGRAY"
+                          android:layout_marginLeft="@dimen/messages_element_margin5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/messages_element_divider_height"
+            android:background="@color/lightGray">
+    </LinearLayout>
+</LinearLayout>

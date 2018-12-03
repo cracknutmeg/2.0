@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient_panel" >
+
+        <TextView
+            android:id="@+id/cancel"
+            style="@style/top_bar_btn_cancel_style" />
+
+        <TextView
+            style="@style/top_bar_title_style"
+            android:text="@string/otp_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/top_bar_btn_login_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/otp_info_text"
+                android:textColor="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/edtemailOTP"
+                style="@style/edit_text_style"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/otp_Email_hint"
+                android:inputType="phone" />
+
+            <!-- <TextView
+                android:id="@+id/ResendEmailOTP"
+                style="@style/top_bar_btn_login_style"
+                android:layout_marginLeft="20dp"
+                android:text="@string/otp_email_not_received"
+                android:textColor="@android:color/darker_gray" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:orientation="vertical" >
+
+            <!-- <TextView
+                style="@style/top_bar_btn_login_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/otp_info_sms_text"
+                android:textColor="@android:color/darker_gray" /> -->
+
+            <EditText
+                android:id="@+id/edtsmsOTP"
+                style="@style/edit_text_style"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/otp_SMS_hint"
+                android:inputType="phone" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                >
+            
+            <TextView
+                android:id="@+id/ResendEmailSMS"
+                style="@style/top_bar_btn_login_style"
+                android:layout_marginLeft="20dp"
+                android:text="@string/otp_reg_received"
+                android:textSize="14sp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/darker_gray" />
+            
+            <TextView
+                android:id="@+id/ResendOTP"
+                style="@style/top_bar_btn_login_style"
+                
+                android:text="@string/otp_resend"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/holo_blue_light"
+               />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/iBtnSubmit"
+            style="@style/button_style"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</RelativeLayout>

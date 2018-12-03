@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.phone.MessageActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        style="@style/top_bar_rel_lay_style">
+
+        <!-- <ImageButton
+            android:id="@+id/iBtnMessagesBack"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left|center_vertical"
+            android:background="@null"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/panel_button_arrow" /> -->
+
+        <TextView
+            android:id="@+id/tvMessagesTitle"
+            style="@style/top_bar_title_style"
+            android:text="@string/en_messagesLayoutTitle" />
+
+        <ToggleButton
+            android:id="@+id/tBtnEditMode"
+            android:layout_width="65dp"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <!-- suppress AndroidLintUseCompoundDrawables -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/editLayout">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:scrollingCache="false" />
+
+            <LinearLayout
+                android:id="@+id/layoutNoMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iViewNoMessages"
+                    android:layout_width="95dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/messages_no_messages" />
+
+                <TextView
+                    android:id="@+id/tvNoMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/en_messagesNoMessagesText"
+                    android:textColor="@color/lightGray"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/editLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/bottom_bar"
+            android:background="@color/msgBottomBack"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnDeleteMessages"
+                android:layout_width="155dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:text="@string/en_messagesDeleteMessages"
+                android:onClick="onBtnDeleteMessagesClicked"
+                android:textColor="@drawable/select_messages_editcolors"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnReadMessages"
+                android:layout_width="155dp"
+                android:layout_height="28dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:text="@string/en_messagesReadMessages"
+                android:onClick="onBtnReadMessagesClicked"
+                android:textColor="@drawable/select_messages_editcolors"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/bottom_bar"
+            android:name="com.allpoint.activities.phone.fragments.TabBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_panel_height"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>
